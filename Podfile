@@ -5,6 +5,18 @@ target 'ObjectiveGlickr' do
   # use_frameworks!
 
   # Pods for ObjectiveGlickr
+  
+  # Networking & Model
+  pod 'AFNetworking', '~> 2.6'
+  pod 'AFNetworkActivityLogger'
+  pod 'FastEasyMapping'
+  
+  # Utilities
+  pod 'BlocksKit'
+  
+  # Debugging
+  pod 'CocoaLumberjack'
+  pod 'Reveal-iOS-SDK', :configurations => ['Debug']
 
   target 'ObjectiveGlickrTests' do
     inherit! :search_paths

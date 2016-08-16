@@ -1,7 +1,9 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Reveal-iOS-SDK/Reveal-Framework-iOS-1.6.2"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public"
-OTHER_LDFLAGS = $(inherited) -ObjC
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworkActivityLogger" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/BlocksKit" "${PODS_ROOT}/Headers/Public/CocoaLumberjack" "${PODS_ROOT}/Headers/Public/FastEasyMapping" "${PODS_ROOT}/Headers/Public/Reveal-iOS-SDK"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworkActivityLogger" "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/BlocksKit" "$PODS_CONFIGURATION_BUILD_DIR/CocoaLumberjack" "$PODS_CONFIGURATION_BUILD_DIR/FastEasyMapping"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworkActivityLogger" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/BlocksKit" -isystem "${PODS_ROOT}/Headers/Public/CocoaLumberjack" -isystem "${PODS_ROOT}/Headers/Public/FastEasyMapping" -isystem "${PODS_ROOT}/Headers/Public/Reveal-iOS-SDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworkActivityLogger" -l"AFNetworking" -l"BlocksKit" -l"CocoaLumberjack" -l"FastEasyMapping" -l"z" -framework "CFNetwork" -framework "CoreData" -framework "CoreGraphics" -framework "MessageUI" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Reveal" -framework "Security" -framework "SystemConfiguration"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods
