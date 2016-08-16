@@ -1,0 +1,19 @@
+//
+//  ObjectiveGlickrPrefixHeader.pch
+//  ObjectiveGlickr
+//
+//  Created by Ilter Cengiz on 16/08/16.
+//  Copyright © 2016 Ilter Cengiz. All rights reserved.
+//
+
+#ifndef ObjectiveGlickrPrefixHeader_pch
+#define ObjectiveGlickrPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import <FastEasyMapping/FastEasyMapping.h>
+#import "FlickrAPIClient.h"
+
+#endif /* ObjectiveGlickrPrefixHeader_pch */

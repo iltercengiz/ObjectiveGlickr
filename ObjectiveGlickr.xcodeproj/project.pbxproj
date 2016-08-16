@@ -15,6 +15,14 @@
 		36051B6B1D638BAE0092A123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36051B691D638BAE0092A123 /* LaunchScreen.storyboard */; };
 		36051B761D638BAE0092A123 /* ObjectiveGlickrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051B751D638BAE0092A123 /* ObjectiveGlickrTests.m */; };
 		36051B811D638BAE0092A123 /* ObjectiveGlickrUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051B801D638BAE0092A123 /* ObjectiveGlickrUITests.m */; };
+		36051B931D6396570092A123 /* FlickrAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051B921D6396570092A123 /* FlickrAPIClient.m */; };
+		36051B981D639F810092A123 /* FlickrAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051B971D639F810092A123 /* FlickrAPIRequest.m */; };
+		36051B9D1D63A35B0092A123 /* RecentPhotosRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051B9C1D63A35B0092A123 /* RecentPhotosRequest.m */; };
+		36051BA31D63A8030092A123 /* FlickrAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BA21D63A8030092A123 /* FlickrAPIResponse.m */; };
+		36051BA71D63ABC10092A123 /* PhotosResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BA61D63ABC10092A123 /* PhotosResponse.m */; };
+		36051BAC1D63ACEA0092A123 /* PagedPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BAB1D63ACEA0092A123 /* PagedPhotos.m */; };
+		36051BAF1D63AF380092A123 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BAE1D63AF380092A123 /* Photo.m */; };
+		36051BB41D63BAC80092A123 /* RecentPhotosRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BB31D63BAC80092A123 /* RecentPhotosRouter.m */; };
 		482BCB4B9F07D920F85D916F /* libPods-ObjectiveGlickr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E58AA9F778ABB4760D07267E /* libPods-ObjectiveGlickr.a */; };
 		885A9505C5CE72420EF83C13 /* libPods-ObjectiveGlickrUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ACA5FE42E4CEDAE4B8AC67C /* libPods-ObjectiveGlickrUITests.a */; };
 		F7CD9058636B3A5041E32C50 /* libPods-ObjectiveGlickrTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A17D43D266D90EA6D856224 /* libPods-ObjectiveGlickrTests.a */; };
@@ -54,6 +62,25 @@
 		36051B7C1D638BAE0092A123 /* ObjectiveGlickrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveGlickrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36051B801D638BAE0092A123 /* ObjectiveGlickrUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveGlickrUITests.m; sourceTree = "<group>"; };
 		36051B821D638BAE0092A123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36051B911D6396570092A123 /* FlickrAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIClient.h; sourceTree = "<group>"; };
+		36051B921D6396570092A123 /* FlickrAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrAPIClient.m; sourceTree = "<group>"; };
+		36051B941D6399D30092A123 /* FlickrAPIClientDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlickrAPIClientDefines.h; sourceTree = "<group>"; };
+		36051B961D639F810092A123 /* FlickrAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIRequest.h; sourceTree = "<group>"; };
+		36051B971D639F810092A123 /* FlickrAPIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrAPIRequest.m; sourceTree = "<group>"; };
+		36051B9B1D63A35B0092A123 /* RecentPhotosRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotosRequest.h; sourceTree = "<group>"; };
+		36051B9C1D63A35B0092A123 /* RecentPhotosRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotosRequest.m; sourceTree = "<group>"; };
+		36051B9F1D63A7090092A123 /* FlickrAPIClientImports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlickrAPIClientImports.h; sourceTree = "<group>"; };
+		36051BA11D63A8030092A123 /* FlickrAPIResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIResponse.h; sourceTree = "<group>"; };
+		36051BA21D63A8030092A123 /* FlickrAPIResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrAPIResponse.m; sourceTree = "<group>"; };
+		36051BA51D63ABC10092A123 /* PhotosResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosResponse.h; sourceTree = "<group>"; };
+		36051BA61D63ABC10092A123 /* PhotosResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosResponse.m; sourceTree = "<group>"; };
+		36051BAA1D63ACEA0092A123 /* PagedPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagedPhotos.h; sourceTree = "<group>"; };
+		36051BAB1D63ACEA0092A123 /* PagedPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagedPhotos.m; sourceTree = "<group>"; };
+		36051BAD1D63AF380092A123 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		36051BAE1D63AF380092A123 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		36051BB01D63B3290092A123 /* ObjectiveGlickrPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveGlickrPrefixHeader.pch; sourceTree = "<group>"; };
+		36051BB21D63BAC80092A123 /* RecentPhotosRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotosRouter.h; sourceTree = "<group>"; };
+		36051BB31D63BAC80092A123 /* RecentPhotosRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotosRouter.m; sourceTree = "<group>"; };
 		3D6570B6F20EA8D092EE67BC /* Pods-ObjectiveGlickrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveGlickrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveGlickrTests/Pods-ObjectiveGlickrTests.release.xcconfig"; sourceTree = "<group>"; };
 		5ACA5FE42E4CEDAE4B8AC67C /* libPods-ObjectiveGlickrUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveGlickrUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A17D43D266D90EA6D856224 /* libPods-ObjectiveGlickrTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveGlickrTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,9 +147,11 @@
 			children = (
 				36051B5E1D638BAE0092A123 /* AppDelegate.h */,
 				36051B5F1D638BAE0092A123 /* AppDelegate.m */,
+				36051B641D638BAE0092A123 /* Main.storyboard */,
 				36051B611D638BAE0092A123 /* ViewController.h */,
 				36051B621D638BAE0092A123 /* ViewController.m */,
-				36051B641D638BAE0092A123 /* Main.storyboard */,
+				36051BA81D63ACB10092A123 /* Model */,
+				36051B901D6396290092A123 /* Networking */,
 				36051B671D638BAE0092A123 /* Assets.xcassets */,
 				36051B691D638BAE0092A123 /* LaunchScreen.storyboard */,
 				36051B6C1D638BAE0092A123 /* Info.plist */,
@@ -135,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				36051B5C1D638BAE0092A123 /* main.m */,
+				36051BB01D63B3290092A123 /* ObjectiveGlickrPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,6 +185,86 @@
 				36051B821D638BAE0092A123 /* Info.plist */,
 			);
 			path = ObjectiveGlickrUITests;
+			sourceTree = "<group>";
+		};
+		36051B901D6396290092A123 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				36051BB11D63BAA20092A123 /* Routers */,
+				36051B951D639F330092A123 /* Requests */,
+				36051BA01D63A79E0092A123 /* Responses */,
+				36051B911D6396570092A123 /* FlickrAPIClient.h */,
+				36051B921D6396570092A123 /* FlickrAPIClient.m */,
+				36051B941D6399D30092A123 /* FlickrAPIClientDefines.h */,
+				36051B9F1D63A7090092A123 /* FlickrAPIClientImports.h */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		36051B951D639F330092A123 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				36051B961D639F810092A123 /* FlickrAPIRequest.h */,
+				36051B971D639F810092A123 /* FlickrAPIRequest.m */,
+				36051B9A1D63A3130092A123 /* Photos */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		36051B9A1D63A3130092A123 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				36051B9B1D63A35B0092A123 /* RecentPhotosRequest.h */,
+				36051B9C1D63A35B0092A123 /* RecentPhotosRequest.m */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		36051BA01D63A79E0092A123 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				36051BA11D63A8030092A123 /* FlickrAPIResponse.h */,
+				36051BA21D63A8030092A123 /* FlickrAPIResponse.m */,
+				36051BA41D63A98E0092A123 /* Photos */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		36051BA41D63A98E0092A123 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				36051BA51D63ABC10092A123 /* PhotosResponse.h */,
+				36051BA61D63ABC10092A123 /* PhotosResponse.m */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		36051BA81D63ACB10092A123 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36051BA91D63ACC50092A123 /* Photos */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36051BA91D63ACC50092A123 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				36051BAA1D63ACEA0092A123 /* PagedPhotos.h */,
+				36051BAB1D63ACEA0092A123 /* PagedPhotos.m */,
+				36051BAD1D63AF380092A123 /* Photo.h */,
+				36051BAE1D63AF380092A123 /* Photo.m */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		36051BB11D63BAA20092A123 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				36051BB21D63BAC80092A123 /* RecentPhotosRouter.h */,
+				36051BB31D63BAC80092A123 /* RecentPhotosRouter.m */,
+			);
+			path = Routers;
 			sourceTree = "<group>";
 		};
 		41DD14CAC41DBE014D64C436 /* Frameworks */ = {
@@ -456,9 +566,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36051B931D6396570092A123 /* FlickrAPIClient.m in Sources */,
 				36051B631D638BAE0092A123 /* ViewController.m in Sources */,
+				36051BAF1D63AF380092A123 /* Photo.m in Sources */,
 				36051B601D638BAE0092A123 /* AppDelegate.m in Sources */,
+				36051B9D1D63A35B0092A123 /* RecentPhotosRequest.m in Sources */,
+				36051BB41D63BAC80092A123 /* RecentPhotosRouter.m in Sources */,
+				36051BA31D63A8030092A123 /* FlickrAPIResponse.m in Sources */,
+				36051B981D639F810092A123 /* FlickrAPIRequest.m in Sources */,
 				36051B5D1D638BAE0092A123 /* main.m in Sources */,
+				36051BAC1D63ACEA0092A123 /* PagedPhotos.m in Sources */,
+				36051BA71D63ABC10092A123 /* PhotosResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +718,8 @@
 			baseConfigurationReference = 8C803BA3C4C7EECC91216250 /* Pods-ObjectiveGlickr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ObjectiveGlickr/ObjectiveGlickrPrefixHeader.pch";
 				INFOPLIST_FILE = ObjectiveGlickr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -613,6 +733,8 @@
 			baseConfigurationReference = C1148085032F4EEC9C72AC3F /* Pods-ObjectiveGlickr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ObjectiveGlickr/ObjectiveGlickrPrefixHeader.pch";
 				INFOPLIST_FILE = ObjectiveGlickr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -626,6 +748,8 @@
 			baseConfigurationReference = DC6630F5F8743ED0EB2E7059 /* Pods-ObjectiveGlickrTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ObjectiveGlickr/ObjectiveGlickrPrefixHeader.pch";
 				INFOPLIST_FILE = ObjectiveGlickrTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.iltercengiz.iOS.ObjectiveGlickrTests;
@@ -639,6 +763,8 @@
 			baseConfigurationReference = 3D6570B6F20EA8D092EE67BC /* Pods-ObjectiveGlickrTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ObjectiveGlickr/ObjectiveGlickrPrefixHeader.pch";
 				INFOPLIST_FILE = ObjectiveGlickrTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.iltercengiz.iOS.ObjectiveGlickrTests;

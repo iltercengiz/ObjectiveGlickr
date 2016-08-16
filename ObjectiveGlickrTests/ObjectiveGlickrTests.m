@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "FlickrAPIClient.h"
+#import "RecentPhotosRouter.h"
 
 @interface ObjectiveGlickrTests : XCTestCase
 
@@ -24,15 +26,28 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+- (void)testRecentPhotos {
+    XCTestExpectation *expectation = [self expectationWithDescription:@"Recent photos"];
+    
+    [RecentPhotosRouter fetchRecentPhotosWithSuccess:^(PhotosResponse *response) {
+        NSLog(@"Response: %@", response);
+        [expectation fulfill];
+    } failure:^(NSError *error) {
+        NSLog(@"Error: %@", error);
+        [expectation fulfill];
+    }];
+    
+//    RecentPhotosRequest *request = [RecentPhotosRequest new];
+//    [[FlickrAPIClient sharedInstance] request:request success:^(NSURLSessionDataTask *task, id response) {
+//        NSLog(@"Response: %@", response);
+//        [expectation fulfill];
+//    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+//        NSLog(@"Error: %@", error);
+//        [expectation fulfill];
+//    }];
+    
+    [self waitForExpectationsWithTimeout:60 handler:^(NSError * _Nullable error) {
+        NSLog(@"Recent photos failed!");
     }];
 }
 
