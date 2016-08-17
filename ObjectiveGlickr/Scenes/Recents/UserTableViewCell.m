@@ -17,6 +17,11 @@
 
 @implementation UserTableViewCell
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    self.userImageView.layer.cornerRadius = CGRectGetWidth(self.userImageView.bounds) / 2.0;
+}
+
 - (void)prepareForReuse {
     [super prepareForReuse];
     self.userImageView.image = nil;
