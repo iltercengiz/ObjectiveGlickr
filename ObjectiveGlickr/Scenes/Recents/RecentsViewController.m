@@ -76,7 +76,7 @@
         Photo *photo = self.recentsDataSource.photos[indexPath.section];
         if ([self isUserCell:indexPath.row]) {
             UserTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UserTableViewCell class]) forIndexPath:indexPath];
-            [cell configureWithUserName:photo.ownerName];
+            [cell configureWithUserName:photo.ownerName nsid:photo.owner];
             return cell;
         } else {
             PhotoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([PhotoTableViewCell class]) forIndexPath:indexPath];

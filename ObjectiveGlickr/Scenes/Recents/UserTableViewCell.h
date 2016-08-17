@@ -10,6 +10,6 @@
 
 @interface UserTableViewCell : UITableViewCell
 
-- (void)configureWithUserName:(NSString *)userName;
+- (void)configureWithUserName:(NSString *)userName nsid:(NSString *)nsid;
 
 @end

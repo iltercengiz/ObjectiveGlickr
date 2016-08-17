@@ -28,6 +28,10 @@
 		36051BC11D6457280092A123 /* PhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BC01D6457280092A123 /* PhotoTableViewCell.m */; };
 		36051BC41D645CCD0092A123 /* RecentsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BC31D645CCD0092A123 /* RecentsDataSource.m */; };
 		36051BC71D646BB40092A123 /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BC61D646BB40092A123 /* UserTableViewCell.m */; };
+		36051BCB1D6477A20092A123 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BCA1D6477A20092A123 /* Person.m */; };
+		36051BCE1D6478BD0092A123 /* PersonRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BCD1D6478BD0092A123 /* PersonRouter.m */; };
+		36051BD61D6479160092A123 /* PersonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BD51D6479160092A123 /* PersonRequest.m */; };
+		36051BDA1D6479C10092A123 /* PersonResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BD91D6479C10092A123 /* PersonResponse.m */; };
 		482BCB4B9F07D920F85D916F /* libPods-ObjectiveGlickr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E58AA9F778ABB4760D07267E /* libPods-ObjectiveGlickr.a */; };
 		885A9505C5CE72420EF83C13 /* libPods-ObjectiveGlickrUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ACA5FE42E4CEDAE4B8AC67C /* libPods-ObjectiveGlickrUITests.a */; };
 		F7CD9058636B3A5041E32C50 /* libPods-ObjectiveGlickrTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A17D43D266D90EA6D856224 /* libPods-ObjectiveGlickrTests.a */; };
@@ -95,6 +99,14 @@
 		36051BC31D645CCD0092A123 /* RecentsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentsDataSource.m; sourceTree = "<group>"; };
 		36051BC51D646BB40092A123 /* UserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
 		36051BC61D646BB40092A123 /* UserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
+		36051BC91D6477A20092A123 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		36051BCA1D6477A20092A123 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		36051BCC1D6478BD0092A123 /* PersonRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonRouter.h; sourceTree = "<group>"; };
+		36051BCD1D6478BD0092A123 /* PersonRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonRouter.m; sourceTree = "<group>"; };
+		36051BD41D6479160092A123 /* PersonRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonRequest.h; sourceTree = "<group>"; };
+		36051BD51D6479160092A123 /* PersonRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonRequest.m; sourceTree = "<group>"; };
+		36051BD81D6479C10092A123 /* PersonResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonResponse.h; sourceTree = "<group>"; };
+		36051BD91D6479C10092A123 /* PersonResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonResponse.m; sourceTree = "<group>"; };
 		3D6570B6F20EA8D092EE67BC /* Pods-ObjectiveGlickrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveGlickrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveGlickrTests/Pods-ObjectiveGlickrTests.release.xcconfig"; sourceTree = "<group>"; };
 		5ACA5FE42E4CEDAE4B8AC67C /* libPods-ObjectiveGlickrUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveGlickrUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A17D43D266D90EA6D856224 /* libPods-ObjectiveGlickrTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveGlickrTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,6 +241,7 @@
 				36051B961D639F810092A123 /* FlickrAPIRequest.h */,
 				36051B971D639F810092A123 /* FlickrAPIRequest.m */,
 				36051B9A1D63A3130092A123 /* Photos */,
+				36051BD31D6479160092A123 /* Person */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -248,6 +261,7 @@
 				36051BA11D63A8030092A123 /* FlickrAPIResponse.h */,
 				36051BA21D63A8030092A123 /* FlickrAPIResponse.m */,
 				36051BA41D63A98E0092A123 /* Photos */,
+				36051BD71D6479A30092A123 /* Person */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -264,6 +278,7 @@
 		36051BA81D63ACB10092A123 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				36051BC81D64775B0092A123 /* Person */,
 				36051BA91D63ACC50092A123 /* Photos */,
 			);
 			path = Model;
@@ -285,6 +300,8 @@
 			children = (
 				36051BB21D63BAC80092A123 /* RecentPhotosRouter.h */,
 				36051BB31D63BAC80092A123 /* RecentPhotosRouter.m */,
+				36051BCC1D6478BD0092A123 /* PersonRouter.h */,
+				36051BCD1D6478BD0092A123 /* PersonRouter.m */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -312,6 +329,33 @@
 				36051BBC1D6455EB0092A123 /* LoadingTableViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		36051BC81D64775B0092A123 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				36051BC91D6477A20092A123 /* Person.h */,
+				36051BCA1D6477A20092A123 /* Person.m */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		36051BD31D6479160092A123 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				36051BD41D6479160092A123 /* PersonRequest.h */,
+				36051BD51D6479160092A123 /* PersonRequest.m */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		36051BD71D6479A30092A123 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				36051BD81D6479C10092A123 /* PersonResponse.h */,
+				36051BD91D6479C10092A123 /* PersonResponse.m */,
+			);
+			path = Person;
 			sourceTree = "<group>";
 		};
 		41DD14CAC41DBE014D64C436 /* Frameworks */ = {
@@ -614,7 +658,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36051BD61D6479160092A123 /* PersonRequest.m in Sources */,
 				36051BC71D646BB40092A123 /* UserTableViewCell.m in Sources */,
+				36051BCE1D6478BD0092A123 /* PersonRouter.m in Sources */,
 				36051B931D6396570092A123 /* FlickrAPIClient.m in Sources */,
 				36051BBD1D6455EB0092A123 /* LoadingTableViewCell.m in Sources */,
 				36051BAF1D63AF380092A123 /* Photo.m in Sources */,
@@ -624,8 +670,10 @@
 				36051BA31D63A8030092A123 /* FlickrAPIResponse.m in Sources */,
 				36051B981D639F810092A123 /* FlickrAPIRequest.m in Sources */,
 				36051B5D1D638BAE0092A123 /* main.m in Sources */,
+				36051BCB1D6477A20092A123 /* Person.m in Sources */,
 				36051BC11D6457280092A123 /* PhotoTableViewCell.m in Sources */,
 				36051BB81D64558A0092A123 /* RecentsViewController.m in Sources */,
+				36051BDA1D6479C10092A123 /* PersonResponse.m in Sources */,
 				36051BAC1D63ACEA0092A123 /* PagedPhotos.m in Sources */,
 				36051BA71D63ABC10092A123 /* PhotosResponse.m in Sources */,
 				36051BC41D645CCD0092A123 /* RecentsDataSource.m in Sources */,

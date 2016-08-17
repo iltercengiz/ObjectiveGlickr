@@ -11,5 +11,7 @@
 
 #import "RecentPhotosRequest.h"
 #import "PhotosResponse.h"
+#import "PersonRequest.h"
+#import "PersonResponse.h"
 
 #endif /* FlickrAPIClientImports_h */

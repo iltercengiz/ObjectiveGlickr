@@ -8,6 +8,7 @@
 
 #import "PhotoTableViewCell.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
+
 @interface PhotoTableViewCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
