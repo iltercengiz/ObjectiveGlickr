@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (nonatomic) NSDateFormatter *dateFormatter;
 
 @end
 
@@ -37,6 +39,15 @@
     } else {
         [self.activityIndicator stopAnimating];
     }
+    self.dateLabel.text = [self.dateFormatter stringFromDate:photo.dateTaken];
+}
+
+- (NSDateFormatter *)dateFormatter {
+    if (!_dateFormatter) {
+        _dateFormatter = [NSDateFormatter new];
+        _dateFormatter.dateFormat = @"dd.MM HH:mm";
+    }
+    return _dateFormatter;
 }
 
 @end

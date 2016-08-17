@@ -68,24 +68,34 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YLe-DL-zNx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                                                    <rect key="frame" x="0.0" y="14" width="375" height="206"/>
                                                 </imageView>
                                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="KfP-cH-5HF" userLabel="Activity Indicator">
                                                     <rect key="frame" x="169" y="91" width="37" height="37"/>
                                                 </activityIndicatorView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QER-uW-ESx">
+                                                    <rect key="frame" x="344" y="0.0" width="31" height="14"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.71280318499999995" green="0.84789103269999999" blue="0.77576154470000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="KfP-cH-5HF" firstAttribute="centerX" secondItem="bZ8-E3-8TO" secondAttribute="centerX" id="4m0-wp-OTA"/>
                                                 <constraint firstItem="YLe-DL-zNx" firstAttribute="bottom" secondItem="bZ8-E3-8TO" secondAttribute="bottom" id="5QH-hB-l6j"/>
                                                 <constraint firstItem="YLe-DL-zNx" firstAttribute="leading" secondItem="bZ8-E3-8TO" secondAttribute="leading" id="98K-uj-JJD"/>
-                                                <constraint firstItem="YLe-DL-zNx" firstAttribute="top" secondItem="bZ8-E3-8TO" secondAttribute="top" id="Aja-mX-00x"/>
+                                                <constraint firstItem="YLe-DL-zNx" firstAttribute="top" secondItem="bZ8-E3-8TO" secondAttribute="top" constant="14" id="Aja-mX-00x"/>
+                                                <constraint firstItem="YLe-DL-zNx" firstAttribute="top" secondItem="QER-uW-ESx" secondAttribute="bottom" id="FTc-Ij-sSh"/>
                                                 <constraint firstItem="YLe-DL-zNx" firstAttribute="trailing" secondItem="bZ8-E3-8TO" secondAttribute="trailing" id="Mh4-dC-VQz"/>
                                                 <constraint firstItem="KfP-cH-5HF" firstAttribute="centerY" secondItem="bZ8-E3-8TO" secondAttribute="centerY" id="Nbb-Th-ck2"/>
+                                                <constraint firstItem="QER-uW-ESx" firstAttribute="top" secondItem="bZ8-E3-8TO" secondAttribute="top" id="WDC-8P-oDb"/>
+                                                <constraint firstAttribute="trailing" secondItem="QER-uW-ESx" secondAttribute="trailing" id="aDV-5n-aWL"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="activityIndicator" destination="KfP-cH-5HF" id="A9y-VH-rAW"/>
+                                            <outlet property="dateLabel" destination="QER-uW-ESx" id="hv2-yy-Uah"/>
                                             <outlet property="photoImageView" destination="YLe-DL-zNx" id="ahP-jq-Flh"/>
                                         </connections>
                                     </tableViewCell>
