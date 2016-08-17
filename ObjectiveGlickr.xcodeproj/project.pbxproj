@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		36051B5D1D638BAE0092A123 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051B5C1D638BAE0092A123 /* main.m */; };
 		36051B601D638BAE0092A123 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051B5F1D638BAE0092A123 /* AppDelegate.m */; };
-		36051B631D638BAE0092A123 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051B621D638BAE0092A123 /* ViewController.m */; };
 		36051B661D638BAE0092A123 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36051B641D638BAE0092A123 /* Main.storyboard */; };
 		36051B681D638BAE0092A123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36051B671D638BAE0092A123 /* Assets.xcassets */; };
 		36051B6B1D638BAE0092A123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36051B691D638BAE0092A123 /* LaunchScreen.storyboard */; };
@@ -23,6 +22,12 @@
 		36051BAC1D63ACEA0092A123 /* PagedPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BAB1D63ACEA0092A123 /* PagedPhotos.m */; };
 		36051BAF1D63AF380092A123 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BAE1D63AF380092A123 /* Photo.m */; };
 		36051BB41D63BAC80092A123 /* RecentPhotosRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BB31D63BAC80092A123 /* RecentPhotosRouter.m */; };
+		36051BB81D64558A0092A123 /* RecentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BB71D64558A0092A123 /* RecentsViewController.m */; };
+		36051BBD1D6455EB0092A123 /* LoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BBB1D6455EB0092A123 /* LoadingTableViewCell.m */; };
+		36051BBE1D6455EB0092A123 /* LoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36051BBC1D6455EB0092A123 /* LoadingTableViewCell.xib */; };
+		36051BC11D6457280092A123 /* PhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BC01D6457280092A123 /* PhotoTableViewCell.m */; };
+		36051BC41D645CCD0092A123 /* RecentsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BC31D645CCD0092A123 /* RecentsDataSource.m */; };
+		36051BC71D646BB40092A123 /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36051BC61D646BB40092A123 /* UserTableViewCell.m */; };
 		482BCB4B9F07D920F85D916F /* libPods-ObjectiveGlickr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E58AA9F778ABB4760D07267E /* libPods-ObjectiveGlickr.a */; };
 		885A9505C5CE72420EF83C13 /* libPods-ObjectiveGlickrUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ACA5FE42E4CEDAE4B8AC67C /* libPods-ObjectiveGlickrUITests.a */; };
 		F7CD9058636B3A5041E32C50 /* libPods-ObjectiveGlickrTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A17D43D266D90EA6D856224 /* libPods-ObjectiveGlickrTests.a */; };
@@ -50,8 +55,6 @@
 		36051B5C1D638BAE0092A123 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		36051B5E1D638BAE0092A123 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		36051B5F1D638BAE0092A123 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		36051B611D638BAE0092A123 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		36051B621D638BAE0092A123 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		36051B651D638BAE0092A123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36051B671D638BAE0092A123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36051B6A1D638BAE0092A123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,6 +84,17 @@
 		36051BB01D63B3290092A123 /* ObjectiveGlickrPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveGlickrPrefixHeader.pch; sourceTree = "<group>"; };
 		36051BB21D63BAC80092A123 /* RecentPhotosRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotosRouter.h; sourceTree = "<group>"; };
 		36051BB31D63BAC80092A123 /* RecentPhotosRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotosRouter.m; sourceTree = "<group>"; };
+		36051BB61D64558A0092A123 /* RecentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentsViewController.h; sourceTree = "<group>"; };
+		36051BB71D64558A0092A123 /* RecentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentsViewController.m; sourceTree = "<group>"; };
+		36051BBA1D6455EB0092A123 /* LoadingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingTableViewCell.h; sourceTree = "<group>"; };
+		36051BBB1D6455EB0092A123 /* LoadingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingTableViewCell.m; sourceTree = "<group>"; };
+		36051BBC1D6455EB0092A123 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
+		36051BBF1D6457280092A123 /* PhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewCell.h; sourceTree = "<group>"; };
+		36051BC01D6457280092A123 /* PhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewCell.m; sourceTree = "<group>"; };
+		36051BC21D645CCD0092A123 /* RecentsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentsDataSource.h; sourceTree = "<group>"; };
+		36051BC31D645CCD0092A123 /* RecentsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentsDataSource.m; sourceTree = "<group>"; };
+		36051BC51D646BB40092A123 /* UserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
+		36051BC61D646BB40092A123 /* UserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
 		3D6570B6F20EA8D092EE67BC /* Pods-ObjectiveGlickrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectiveGlickrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectiveGlickrTests/Pods-ObjectiveGlickrTests.release.xcconfig"; sourceTree = "<group>"; };
 		5ACA5FE42E4CEDAE4B8AC67C /* libPods-ObjectiveGlickrUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveGlickrUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A17D43D266D90EA6D856224 /* libPods-ObjectiveGlickrTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectiveGlickrTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,8 +162,8 @@
 				36051B5E1D638BAE0092A123 /* AppDelegate.h */,
 				36051B5F1D638BAE0092A123 /* AppDelegate.m */,
 				36051B641D638BAE0092A123 /* Main.storyboard */,
-				36051B611D638BAE0092A123 /* ViewController.h */,
-				36051B621D638BAE0092A123 /* ViewController.m */,
+				36051BB91D6455C40092A123 /* View */,
+				36051B8F1D638DD50092A123 /* Scenes */,
 				36051BA81D63ACB10092A123 /* Model */,
 				36051B901D6396290092A123 /* Networking */,
 				36051B671D638BAE0092A123 /* Assets.xcassets */,
@@ -185,6 +199,14 @@
 				36051B821D638BAE0092A123 /* Info.plist */,
 			);
 			path = ObjectiveGlickrUITests;
+			sourceTree = "<group>";
+		};
+		36051B8F1D638DD50092A123 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				36051BB51D6455740092A123 /* Recents */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		36051B901D6396290092A123 /* Networking */ = {
@@ -265,6 +287,31 @@
 				36051BB31D63BAC80092A123 /* RecentPhotosRouter.m */,
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		36051BB51D6455740092A123 /* Recents */ = {
+			isa = PBXGroup;
+			children = (
+				36051BC21D645CCD0092A123 /* RecentsDataSource.h */,
+				36051BC31D645CCD0092A123 /* RecentsDataSource.m */,
+				36051BB61D64558A0092A123 /* RecentsViewController.h */,
+				36051BB71D64558A0092A123 /* RecentsViewController.m */,
+				36051BC51D646BB40092A123 /* UserTableViewCell.h */,
+				36051BC61D646BB40092A123 /* UserTableViewCell.m */,
+				36051BBF1D6457280092A123 /* PhotoTableViewCell.h */,
+				36051BC01D6457280092A123 /* PhotoTableViewCell.m */,
+			);
+			path = Recents;
+			sourceTree = "<group>";
+		};
+		36051BB91D6455C40092A123 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				36051BBA1D6455EB0092A123 /* LoadingTableViewCell.h */,
+				36051BBB1D6455EB0092A123 /* LoadingTableViewCell.m */,
+				36051BBC1D6455EB0092A123 /* LoadingTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		41DD14CAC41DBE014D64C436 /* Frameworks */ = {
@@ -404,6 +451,7 @@
 			files = (
 				36051B6B1D638BAE0092A123 /* LaunchScreen.storyboard in Resources */,
 				36051B681D638BAE0092A123 /* Assets.xcassets in Resources */,
+				36051BBE1D6455EB0092A123 /* LoadingTableViewCell.xib in Resources */,
 				36051B661D638BAE0092A123 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,8 +614,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36051BC71D646BB40092A123 /* UserTableViewCell.m in Sources */,
 				36051B931D6396570092A123 /* FlickrAPIClient.m in Sources */,
-				36051B631D638BAE0092A123 /* ViewController.m in Sources */,
+				36051BBD1D6455EB0092A123 /* LoadingTableViewCell.m in Sources */,
 				36051BAF1D63AF380092A123 /* Photo.m in Sources */,
 				36051B601D638BAE0092A123 /* AppDelegate.m in Sources */,
 				36051B9D1D63A35B0092A123 /* RecentPhotosRequest.m in Sources */,
@@ -575,8 +624,11 @@
 				36051BA31D63A8030092A123 /* FlickrAPIResponse.m in Sources */,
 				36051B981D639F810092A123 /* FlickrAPIRequest.m in Sources */,
 				36051B5D1D638BAE0092A123 /* main.m in Sources */,
+				36051BC11D6457280092A123 /* PhotoTableViewCell.m in Sources */,
+				36051BB81D64558A0092A123 /* RecentsViewController.m in Sources */,
 				36051BAC1D63ACEA0092A123 /* PagedPhotos.m in Sources */,
 				36051BA71D63ABC10092A123 /* PhotosResponse.m in Sources */,
+				36051BC41D645CCD0092A123 /* RecentsDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
