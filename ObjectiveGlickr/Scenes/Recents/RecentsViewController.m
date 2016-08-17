@@ -11,6 +11,7 @@
 #import "UserTableViewCell.h"
 #import "PhotoTableViewCell.h"
 #import "LoadingTableViewCell.h"
+#import <MWPhotoBrowser/MWPhotoBrowser.h>
 
 @interface RecentsViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -130,7 +131,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    Photo *photo = self.recentsDataSource.photos[indexPath.section];
+    MWPhotoBrowser *photoBrowser = [[MWPhotoBrowser alloc] initWithPhotos:@[[MWPhoto photoWithURL:photo.URL]]];
+    photoBrowser.displayActionButton = NO;
+    [self presentViewController:photoBrowser animated:YES completion:nil];
+    [self.navigationController pushViewController:photoBrowser animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
