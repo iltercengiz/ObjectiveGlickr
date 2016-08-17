@@ -17,6 +17,9 @@ target 'ObjectiveGlickr' do
   # Debugging
   pod 'CocoaLumberjack'
   pod 'Reveal-iOS-SDK', :configurations => ['Debug']
+  
+  # UI
+  pod 'MWPhotoBrowser'
 
   target 'ObjectiveGlickrTests' do
     inherit! :search_paths
