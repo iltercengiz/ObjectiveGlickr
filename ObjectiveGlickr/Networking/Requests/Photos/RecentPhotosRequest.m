@@ -15,6 +15,7 @@
     if (self) {
         self.method = @"flickr.photos.getRecent";
         self.extras = @"owner_name,date_taken,media,url_l";
+        self.perPage = @10;
         self.page = @0;
     }
     return self;
@@ -24,6 +25,7 @@
     FEMMapping *mapping = [super mapping];
     [mapping addAttributesFromDictionary:@{
         NSStringFromSelector(@selector(extras)): @"extras",
+        NSStringFromSelector(@selector(perPage)): @"per_page",
         NSStringFromSelector(@selector(page)): @"page"
     }];
     return mapping;

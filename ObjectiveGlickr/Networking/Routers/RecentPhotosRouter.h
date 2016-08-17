@@ -10,6 +10,6 @@
 
 @interface RecentPhotosRouter : NSObject
 
-+ (void)fetchRecentPhotosWithSuccess:(void (^)(PhotosResponse *response))success failure:(void (^)(NSError *error))failure;
++ (void)fetchRecentPhotos:(NSNumber *)page success:(void (^)(PhotosResponse *response))success failure:(void (^)(NSError *error))failure;
 
 @end

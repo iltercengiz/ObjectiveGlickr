@@ -10,8 +10,9 @@
 
 @implementation RecentPhotosRouter
 
-+ (void)fetchRecentPhotosWithSuccess:(void (^)(PhotosResponse *response))success failure:(void (^)(NSError *error))failure {
++ (void)fetchRecentPhotos:(NSNumber *)page success:(void (^)(PhotosResponse *response))success failure:(void (^)(NSError *error))failure {
     RecentPhotosRequest *request = [RecentPhotosRequest new];
+    request.page = page;
     [[FlickrAPIClient sharedInstance] request:request success:^(NSURLSessionDataTask *task, id response) {
         PhotosResponse *responseObject = [FEMDeserializer objectFromRepresentation:response mapping:[PhotosResponse mapping]];
         if (success) {

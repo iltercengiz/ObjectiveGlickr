@@ -16,6 +16,11 @@
 @property (nonatomic) NSString *extras;
 
 /**
+ Photo count to fetch per page. Defults to 10.
+ */
+@property (nonatomic) NSNumber *perPage;
+
+/**
  Pagination page to fetch
  */
 @property (nonatomic) NSNumber *page;
